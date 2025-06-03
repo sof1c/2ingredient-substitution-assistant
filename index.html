@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ingredient Substitution Assistant</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>🧾 Ingredient Substitution Assistant</h1>
+
+  <label for="ingredient">Enter an ingredient:</label><br>
+  <input type="text" id="ingredient" placeholder="e.g., butter"><br><br>
+
+  <label for="reason">Reason for substitution:</label><br>
+  <select id="reason">
+    <option value="general">General</option>
+    <option value="vegan">Vegan</option>
+    <option value="allergy">Allergy</option>
+    <option value="budget">Budget-friendly</option>
+  </select><br><br>
+
+  <button onclick="getSubstitute()">Find Substitutes</button>
+
+  <h2>Suggested Substitutes:</h2>
+  <div id="result" style="white-space: pre-wrap;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
